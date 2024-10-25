@@ -8,10 +8,11 @@ on:
 jobs:
   deploy:
     runs-on: ubuntu-20.04
+
     permissions:
       pages: write
       id-token: write
-      contents: read
+      contents: write
 
     steps:
       - name: Checkout code
@@ -36,4 +37,5 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: './output'
+          publish_branch: 'gh-pages'
 
