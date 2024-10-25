@@ -5,18 +5,15 @@ on:
     branches:
       - master
 
-permissions:
-  pages: write
-  id-token: write
-  contents: read
-
 jobs:
-  build-and-deploy:
+  deploy:
     runs-on: ubuntu-20.04
-
+    permissions:
+      pages: write
+      id-token: write
+      contents: read
 
     steps:
-
       - name: Checkout code
         uses: actions/checkout@v3
 
@@ -37,8 +34,6 @@ jobs:
       - name: Deploy to github pages
         uses: peaceiris/actions-gh-pages@v4
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN}}
+          github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: './output'
-          publish_branch: 'gh-page'
-
 
