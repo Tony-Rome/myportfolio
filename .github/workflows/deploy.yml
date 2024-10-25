@@ -1,0 +1,19 @@
+name: Deploy to github pages
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-20.04
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Set up Python 3.10.11
+        uses: actions/setup-python@v4
+
+
