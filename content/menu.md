@@ -1,0 +1,2 @@
+- [Home](/index.html)
+- [Static website with github](/web/static-web-gh-pages.html)
