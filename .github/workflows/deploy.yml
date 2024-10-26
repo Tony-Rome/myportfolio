@@ -30,7 +30,7 @@ jobs:
 
       - name: Generate static ste
         run: |
-          python generator.py
+          python ./myportfolio/generator.py
 
       - name: Deploy to github pages
         uses: peaceiris/actions-gh-pages@v4
