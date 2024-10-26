@@ -1,2 +1,2 @@
-- [Home](/myportfolio/index.html)
-- [Static website with github](/myportfolio/web/static-web-gh-pages.html)
+- [Home](index.html)
+- [Static website with github](web/static-web-gh-pages.html)
