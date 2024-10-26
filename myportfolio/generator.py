@@ -4,7 +4,7 @@ from pathlib import Path
 from typing import AnyStr
 
 import markdown
-from myportfolio.contants import CONTENT_DIR_NAME, OUTPUT_DIR_NAME, STYLES_DIR_NAME, STYLES_FILE_NAME, MENU_FILE_NAME
+from contants import CONTENT_DIR_NAME, OUTPUT_DIR_NAME, STYLES_DIR_NAME, STYLES_FILE_NAME, MENU_FILE_NAME
 
 content_path: Path = Path(f"../{CONTENT_DIR_NAME}")
 output_path: Path = Path(f"../{OUTPUT_DIR_NAME}")
@@ -111,6 +111,5 @@ def create_content():
                                                 menu_content=menu_content, styles_path=styles_path)
 
             write_or_read_file(path=output_html_path, file=html_output, action=False)
-
 
 create_content()
