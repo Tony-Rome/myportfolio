@@ -1,0 +1,130 @@
+body {
+    background-color: #ffffff;
+    font-family: monospace;
+    color: #000000;
+}
+
+h1 {
+    font-size: 340%;
+}
+
+h3 {
+    text-align: center;
+}
+
+hr {
+    width: 50%;
+}
+
+.base-line {
+    position: absolute;
+    background: darkred;
+    width: 100%;
+    height: 2%;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.container {
+    margin-top: 2%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.menu {
+    top: 0;
+    margin-top: 10%;
+    width: 15%;
+    position: fixed;  /*Fix menu section whe sub elements are displayed*/
+}
+
+a {
+    color: #000000;
+    font-size: 120%;
+    text-decoration: none;
+    transition: color 0.1s ease-in-out;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #43c3ee;
+}
+
+ul ul {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 1s ease;
+    display: block;
+}
+
+li:hover > ul {
+    max-height: 500px;
+}
+
+.content {
+    width: 70%;
+    margin-left: 15%;
+    text-align: center;
+}
+
+.contact {
+    top: 0;
+    margin-top: 10%;
+    text-align: center;
+    width: 15%;
+    position: fixed;
+    left: 75%;
+}
+
+.container-contact {
+    margin-top: 5%;
+}
+
+img {
+    width: 15%;
+}
+
+pre {
+    text-align: left;
+    margin: 0 15% 0 15%;
+}
+
+/* General styling for code block container */
+.codehilite {
+    background-color: #e1e1e1;
+    color: #333;
+    padding: 1%;
+    margin-left: 20%;
+    margin-right: 20%;
+    border-radius: 5px;
+    overflow-x: auto;
+    font-family: Consolas, Monaco, "Andale Mono", "Ubuntu Mono", monospace;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+/* Styling for specific syntax elements */
+
+/* Keywords */
+.codehilite .kn { color: #008000; font-weight: bold; } /* 'import', 'from', etc. */
+.codehilite .k { color: #008000; font-weight: bold; }   /* 'as', 'return', etc. */
+
+/* Namespaces and other identifiers */
+.codehilite .nn { color: #1f619e; }                     /* 'markdown', 'md' */
+.codehilite .n { color: #333; }                         /* General variable names */
+
+/* Strings */
+.codehilite .s { color: #ba2121; }                      /* Single/double quoted strings */
+.codehilite .s1 { color: #ba2121; }                     /* Strings with single quotes */
+.codehilite .s2 { color: #ba2121; }                     /* Strings with double quotes */
+
+/* Punctuation */
+.codehilite .p { color: #333; }                         /* Commas, parentheses, etc. */
+
+/* Comments */
+.codehilite .c { color: #6a737d; font-style: italic; }  /* Comments */
+
+/* Operators */
+.codehilite .o { color: #000000; }                      /* Operators like '=', '+', etc. */
