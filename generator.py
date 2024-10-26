@@ -6,13 +6,13 @@ from typing import AnyStr
 import markdown
 from contants import CONTENT_DIR_NAME, OUTPUT_DIR_NAME, STYLES_DIR_NAME, STYLES_FILE_NAME, MENU_FILE_NAME
 
-content_path: Path = Path(f"../{CONTENT_DIR_NAME}")
-output_path: Path = Path(f"../{OUTPUT_DIR_NAME}")
-styles_path: Path = Path(f"../{STYLES_DIR_NAME}")
+content_path: Path = Path(f"{CONTENT_DIR_NAME}")
+output_path: Path = Path(f"{OUTPUT_DIR_NAME}")
+styles_path: Path = Path(f"{STYLES_DIR_NAME}")
 menu_path: Path = content_path / MENU_FILE_NAME
 
-css_source_path = Path(f"../{STYLES_DIR_NAME}/{STYLES_FILE_NAME}")
-css_target_path = Path(f"../{OUTPUT_DIR_NAME}/{STYLES_FILE_NAME}")
+css_source_path = Path(f"{STYLES_DIR_NAME}/{STYLES_FILE_NAME}")
+css_target_path = Path(f"{OUTPUT_DIR_NAME}/{STYLES_FILE_NAME}")
 
 output_path.mkdir(exist_ok=True)
 
