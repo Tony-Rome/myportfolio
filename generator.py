@@ -4,7 +4,7 @@ from pathlib import Path
 from typing import AnyStr
 
 import markdown
-from contants import CONTENT_DIR_NAME, OUTPUT_DIR_NAME, STYLES_DIR_NAME, STYLES_FILE_NAME, MENU_FILE_NAME
+from myportfolio.contants import CONTENT_DIR_NAME, OUTPUT_DIR_NAME, STYLES_DIR_NAME, STYLES_FILE_NAME, MENU_FILE_NAME
 
 content_path: Path = Path(f"../{CONTENT_DIR_NAME}")
 output_path: Path = Path(f"../{OUTPUT_DIR_NAME}")
